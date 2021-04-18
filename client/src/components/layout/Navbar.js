@@ -19,8 +19,9 @@ const Navbar = ({title,icon}) => {
 
   const authLinks = (
        <Fragment>
-           <li>Hello {user && user.name}</li>
-           <li>
+           <li>Hello {user && user.name} {''}</li>
+           {'                                                   '}
+           <li >
                <a onClick={onLogout} href="#">
                    <i className="fas fa-sign-out-alt"></i> <span className="hide-sm">Logout</span>
                </a>
@@ -30,23 +31,23 @@ const Navbar = ({title,icon}) => {
 
   const guestLinks = (
     <Fragment>
-        <li>Hello {user && user.name}</li>
+        <li>Hello {user && user.name}{' '}</li>
+        {'                                                      '}
+        <li >
+            <Link to='/about'><i class="fa fa-newspaper-o" aria-hidden="true"></i>{' '}Subscriptions Available</Link>
+        </li>
         <li>
-                 <Link to='/register' >Register</Link>
+                 <Link to='/register' ><i className="fas fa-user-plus"></i>{' '}Register</Link>
         </li> 
         <li>
-                 <Link to='/login' >Login</Link>
+                 <Link to='/login' ><i className="fas fa fa-sign-in" aria-hidden="true"></i>{' '}Login</Link>
         </li> 
     </Fragment>
 );
 
     return (
-        <div className="navbar bg-primary">
-            <h1>
-                <i className='fas fa-id-card-alt' />
-                {' '}{title}
-            </h1>
-            <ul>
+        <div className="navbar bg-primary" >
+            <ul style={{float: 'right'}}>
                 {isAuthenticated?authLinks:guestLinks}
             </ul>
         </div>
@@ -59,8 +60,8 @@ Navbar.propTypes = {
 }
 
 Navbar.defalutProps = {
-    title: 'Contact Keeper',
-    icon: 'fas fa-id-card-alt'
+    title: '',
+    icon: ''
 }
 
 export default Navbar;

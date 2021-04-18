@@ -19,6 +19,12 @@ const Contacts = () => {
 
     }
 
+    let price = 0;
+
+    contacts.forEach(contact => {
+        price+=parseInt(contact.phone);
+    });
+
     return (
         <Fragment>
            {filtered!==null? filtered.map(contact => (
@@ -26,6 +32,7 @@ const Contacts = () => {
             )):contacts.map(contact => (
                 <ContactItem key={contact._id} contact={contact} />
             ))}
+            <h1>Total Price : <i className="fas fa-rupee-sign">{price}</i></h1>
         </Fragment>
     )
 }

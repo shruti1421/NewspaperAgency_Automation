@@ -1,0 +1,187 @@
+.main{
+    padding-bottom: calc(3px);
+    font-size: 3.5vw; font-family: 'Orbitron', sans-serif; text-align: left;
+    }
+    @media ( max-width: 1500px){
+    .main{padding-bottom: calc(3px);
+    font-size: 2.2vw; font-family: 'Orbitron', sans-serif; text-align: left;}
+    }
+    #title1{color: rgb(251,79,20);}
+    #title2{color: rgb(0,0,0); }
+    .space{
+      border-color: rgb(255,165,0);
+      width: 100%;
+      height: calc(2px + 3vw);
+    background-color: rgb(255,165,0);
+    }
+    #logo{
+      width: calc(20px + 5vw);
+      height: calc(20px + 5vw);
+    }
+    .box{
+    margin-bottom: calc(10px + 8vw);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75vw;
+      background-color: rgb(255,218,185);
+      padding-top: calc(14px + 3vw);
+      padding-right: calc(30px + 5vw);
+      padding-bottom: calc(14px + 3vw);
+      padding-left: calc(30px + 5vw);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+    .about{
+    font-family: 'Raleway', sans-serif;
+      color: brown;
+      font-size: 1.5vw;
+    }
+    #hee{
+      height: calc(5em + 3vw);
+    }
+    .subs{
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      text-decoration: none;
+    }
+    .subs h2{
+      margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: transparent;
+      background-image: linear-gradient(to right , #2e0854, #8b008b, #ff1493, #2e0854);
+    -webkit-background-clip: text;
+      animation-name:  animate;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      background-size: 300%;
+    }
+    @keyframes animate {
+    0%{
+      background-position: 0 100%;
+        font-size: calc(1em + 3vw);
+    }
+    50%{
+      background-position: 100% 0;
+      font-size: calc(2em + 4vw);
+    }
+    100%{
+      background-position: 0 100%;
+        font-size: calc(1em + 3vw);
+    }
+    }
+    #contact{
+      background-color: #e8eff8;
+      font-size: calc(5px + 1vw);
+      font-family: "Open Sans" ,sans-serif;
+      color: #363535;
+      text-align: left;
+      padding-top: calc(3px + 1vw);
+      padding-right: calc(5px + 2vw);
+      padding-bottom: calc(3px + 1vw);
+      padding-left: calc(5px + 2vw);
+      margin-bottom: 0px;
+    }
+    #addr{
+      color: white;
+      margin-top: 0px;
+      font-family: "Open Sans" ,sans-serif;
+      line-height: 1.75em;
+        font-size: calc(4px + 1vw);
+      text-align: right;
+      padding-top: calc(1px + 0.5vw);
+      padding-right: calc(5px + 2vw);
+      padding-bottom: (1px + 1vw);
+    
+    }
+    #gap{
+      margin-top: calc(10px + 8vw);
+    }
+    .hr{height: calc(0.15px + 0.15vw);
+      background-color:brown;
+      border-radius: 30px;
+      opacity: 75%;
+      }
+      .newsbout{
+        text-align: justify;
+        font-size: 1.5vw;
+        color: brown;
+      }
+      .imgnews{
+        float: right;
+        margin-left: calc(40px + 10vw);
+        border-width: 2vw;
+        border-color: brown;
+        border-opacity:75%;
+        height: auto;
+        max-width: 30%;
+      }
+      .subut{
+        background-color: rgb(251,79,20);
+        border-color: rgb(251,79,20);
+        float: right;
+        height: auto;
+        width: auto;
+        border-radius: 3px;
+        color: white;
+        padding-left: calc(1px + 0.5vw);
+        padding-right: calc(1px + 0.5vw);
+        padding-top: calc(1px + 0.25vw);
+        padding-bottom: calc(1px + 0.25vw);
+        font-family: 'Raleway', sans-serif;
+      }
+      .subut:hover{
+          box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      }
+      .papername{
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2.25vw;
+        color: brown;
+      }
+      .subuh{
+        background-color: #ed872d;
+        border-color: #ed872d;
+        float: right;
+        height: auto;
+        width: auto;
+        border-radius: 5px;
+        font-size: calc(0.75px + 0.80vw);
+        color: white;
+        padding-left: calc(0.5px + 1vw);
+        padding-right: calc(0.5px + 1vw);
+        padding-top: calc(1px + 0.5vw);
+        padding-bottom: calc(1px + 0.5vw);
+        font-family: "Raleway";
+        margin-top: calc(6px + 4vw);
+        margin-right: calc(0.1px + 1vw);
+      }
+      .subuh:hover{
+          box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      }
+      .subul{
+        background-color:  #ed872d;
+        border-color:  #ed872d;
+        float: right;
+        height: auto;
+        width: auto;
+        border-radius: 5px;
+        font-size: calc(0.75px + 0.80vw);
+        color: white;
+        padding-left: calc(0.5px + 1vw);
+        padding-right: calc(0.5px + 1vw);
+        padding-top: calc(1px + 0.5vw);
+        padding-bottom: calc(1px + 0.5vw);
+        font-family: "Raleway";
+        margin-top: calc(6px + 4vw);
+        margin-right: calc(0.1px + 4vw);
+      }
+      .subul:hover{
+          box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      }
+  
+      .navbar ul {
+        text-align: center;
+        justify-content: center;
+      }
+     
+  
+      
