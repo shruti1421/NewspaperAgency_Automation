@@ -19,6 +19,9 @@ To ease the process for the customers and to simplify the subscription record ma
 # ER Diagram
 ![ER Diagram](/ImagesReadme/ER%20Diagram.png)
 
+# Subscription Page
+![ER Diagram](/ImagesReadme/Subscription%20Page.png)
+
 # Tech Stack
 
 <b>Frontned</b>: Reactjs
