@@ -3,7 +3,6 @@ const router = express.Router();
 const { check, validationResult } = require('express-validator/check'); //user input validator
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const config = require('config');
 
 const User = require('../models/User');
 
@@ -15,6 +14,7 @@ router.post('/',[
     check('email','Please include a valid Email').isEmail(),
     check('password','Please enter a password with 6 or more characters').isLength({min: 6}),
 ],async (req,res) => {
+    console.log("hello");
     const errors = validationResult(req);
     if(!errors.isEmpty()){
         return res.status(400).json({error: errors.array()});
@@ -50,7 +50,7 @@ router.post('/',[
             }
         }
 
-        jwt.sign(payload, config.get('jwtSecret'),{ 
+        jwt.sign(payload, process.env.jwtSecret,{ 
             expiresIn: 360000
          } ,(err,token) =>{
              if(err)throw err;
