@@ -42,8 +42,6 @@ To ease the process for the customers and to simplify the subscription record ma
 <br>
 <b>Backend Server</b>: ExpressJs
 <br>
-<b>Deployment</b>: CI/CD - Netlify
-<br>
 <br>
 
 ***Glad to see you here! Show some love by [starring](https://github.com/shruti1421/NewspaperAgency_Automation) this repo.***
