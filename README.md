@@ -16,6 +16,9 @@ To ease the process for the customers and to simplify the subscription record ma
 - User Management (Login, register, email verification before entering the system) 
 - Authenticated Routes and 404 error page.
 
+# ER Diagram
+![ER Diagram](/ImagesReadme/ER%20Diagram.png)
+
 # Tech Stack
 
 <b>Frontned</b>: Reactjs
